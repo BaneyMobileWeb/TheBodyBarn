@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--
+*****************************************************************************
+* Description: Index page for The Body Barn
+* Author: Amanda Seiders-Baney
+* Date Developed: February 26, 2021
+* Date of Most Recent Edit: April 27, 2021
+* Date Tested: April 27, 2021
+* Tested on Chrome, Firefox, Edge, Android and iPhone
+*****************************************************************************
+-->
+<!--
+*HEADER*
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Body Barn, owned and operated by Sara Salingue Wilson, in Christopher, IL.">
+    <meta name="keywords" content="hair cuts, beauty, tshirts, salon, spa, Christopher, IL">
+<!-- 
+***** VIEWPORT FOR RESPONSIVE *****
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Body Barn | Welcome | Christopher, IL</title>
+<!--
+***** STYLESHEETS *****
+-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<!--
+***** FAVICON *****
+-->
+    <link rel="shortcut icon" type="image/png" href="graphics/favicon.ico">
+
+</head>
+
+<body>
+<article>
+    <main>
+<!--
+***** NAVIGATION *****
+-->
+<nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li><br>
+            <li><a href="services.html">Services</a></li><br>
+                <ul class="services">
+                    <li><a href="Salon.html">Salon</a></li><br>
+                    <ul class="salon">
+                        <li><a href="SalonAppt.html">Make an Appointment</a></li><br>
+                        <li><a href="SalonQC.html">Question/Comments</a></li>
+                    </ul><br>
+                    <li><a href="Spa.html">Spa</a></li><br>
+                    <ul class="spa">
+                        <li><a href="SpaAppt.html">Make an Appointment</a></li><br>
+                        <li><a href="SpaQC.html">Question/Comments</a></li>
+                    </ul><br>
+                    <li><a href="Design.html">Design</a></li><br>
+                    <ul class="design">
+                       <li><a href="Tshirts.html">Tshirts</a></li><br>
+                        <li><a href="Blankets.html">Blankets</a></li>
+                    </ul>
+                </ul>
+            
+            <br><li><a href="Contact.html">Contact</a></li>
+                <ul class="contact"><br>
+                    <li><a href="ContactOrder.html">Order</a></li><br>
+                    <li><a href="ContactQC.html">Comments/Questions</a></li>
+                </ul>
+            </ul>  
+    </nav><br>
+    </main>
+    <aside><br>
+    <br><h1>The Body Barn</h1>
+        <h2>Welcome to The Body Barn, owned and operated by Sara Salingue Wilson, in Christopher, IL. </h2><h3>Where beauty is enhanced, stress is relieved, spirits are brightened, and closets are filled.</h3></aside></article>
+<!--
+***** OVERLAY IMAGE *****
+-->
+    <div class="container">
+        <img id="mib" src="graphics/logo.jpg" alt="logo" >
+    <div class="overlay">
+            <img id="ro" src="graphics/main.jpg">
+        </div>
+    </div>
+   <br>
+    <p> The Body Barn is a place where beauty, comfort, knowledge, and personalized attention combine to create a totally memorable, relaxing and rejuvenating experience. This experience is achieved by providing a clean, peaceful and friendly atmosphere, providing exceptional services, using high-end professional products, maintaining professional conversation, and continually improving ourselves through quality education that will be passed on to the clients.</p>
+        
+        <em>Important goals to The Body Barn:</em>
+        <li>Building enduring and rewarding loyal relationships with our clients and community.</li> 
+        <li> Employing lasting connections through kindness, integrity, and honesty. </li>
+        <li> While maintaining an overall genuine concern for our clients well being.</li> 
+        <p>At The Body Barn, we want to encourage our clients to maintain outer beauty as well as inner beauty, as our belief is that inner and outer beauty go hand in hand. Happy, and positive attitudes are always encouraged at The Body Barn.</p>
+
+
+<!--
+***** FOOTER *****
+-->
+ 
+   <footer> 
+       The Body Barn<br>
+    505 S. State St<br>
+    Christopher, IL 62822<br>
+    618-927-5585<br>
+    <a href="thebodybarn@yahoo.com">The Body Barn</a></footer>
+<!--
+***** RESPONSIVE SCRIPTING *****
+-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="dist/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu').slicknav();
+        });
+        </script>
+<!--
+***** AUDIO *****
+-->
+    <audio id="audioplayer" controls autoplay loop>
+    <source src="media/music.mp3">
+    </audio>
+    
+</body>
+</html>

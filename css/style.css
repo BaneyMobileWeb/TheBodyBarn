@@ -1,0 +1,173 @@
+/****************************************************************************
+* Description: Style Sheet for The Body Barn Website
+* Author: Amanda Seiders-Baney
+* Date Developed: February 26, 2021
+* Date of Most Recent Edit: April 27, 2021
+* Date Tested: April 27, 2021
+* Tested on Chrome, Firefox, Edge, Android and iPhone
+*****************************************************************************/
+.slicknav_menu {
+    display: none;
+}
+/****************************************************************************
+* Tablet/Desktop 
+*****************************************************************************/
+@media screen and (max-width: 960px) {
+    .slicknav_menu {
+        display: none;
+    }
+
+    #nav_menu {
+        display: block;
+
+    }
+}
+/****************************************************************************
+* Smartphones/Surface Pro
+*****************************************************************************/
+@media screen and (max-width: 768px) {
+    .slicknav_menu {
+        display: none;
+    }
+
+    #nav_menu {
+        display: block;
+    }
+}
+
+/****************************************************************************
+* All other media
+*****************************************************************************/
+@media screen and (max-width: 667px)  {
+    .slicknav_menu {
+        display: block;
+    }
+    #nav_menu {
+        display: none;
+    }
+    table.all{
+        width:auto;
+        grid-row-gap: 5%;
+    }
+    article{
+        display: none;
+    }
+}
+/****************************************************************************
+*Navigation Menu.
+*****************************************************************************/
+#nav_menu {
+	border-top: .115em solid #885b95;
+    border-bottom: .115em solid #885b95;
+	background: #FEDAFD;
+    float: left;
+    color: #885b95;
+    width: 100%;
+}
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.0;
+    
+}
+#nav_menu ul li {
+    display: inline;
+	position: relative;
+	float: left;
+    color: #885b95; 
+}
+#nav_menu ul li a {
+    font-size-adjust: auto;
+	text-decoration: none;
+	flex-wrap: wrap;
+       color: #885b95; 
+}
+#nav_menu ul li:hover {
+	top: 100%;
+}
+#nav_menu ul li a:hover {
+    background-color: #ECC4F7;
+}
+#nav_menu li a {
+    display: block;
+    width: 100%;
+}
+#mobile_menu {
+    display: none;
+
+}
+#menu {
+	display: block;
+	color: #885b95;
+    font-family: fantasy;
+    font-size-adjust: auto;
+}
+
+body {
+    color: #955b85;
+    width: 100%;
+    font-size: 100%;
+    font-family: sans-serif;
+    background-image: url(https://amandaseidersbaney.github.io/TheBodyBarn/graphics/pastel.jpg);
+}
+/****************************************************************************
+*Image rollover controls
+*****************************************************************************/
+.container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+#ro{
+    border: 1.05em solid #E1AEF0;
+    border-radius: 1.05em;
+    max-height: 60%;
+    max-width: 50%;
+    margin-left: 25%;
+}
+#mib {
+    border: 1.05em solid #E1AEF0;
+    border-radius: 1.05em;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 25%;
+}
+html {
+    margin: 2.5%;
+
+}
+h1{
+    text-align: center;
+}
+/***************************************************************************** FORMATTING FOR 2 COLUMN MENU
+****************************************************************************/
+article {
+    width:100%;
+    column-count: 2;
+    column-gap: 0;
+    padding: 2%;
+}
+main {
+    float: left;
+    font-size-adjust: auto;
+    padding: 1%;
+    width: 75%;
+}
+aside {
+    float: right;
+    font-size-adjust: auto;
+    padding: 1%;
+    flex-wrap: wrap;
+}
